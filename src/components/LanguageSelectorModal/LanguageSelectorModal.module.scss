@@ -1,0 +1,59 @@
+// Language Selector Modal
+
+// Variables
+$light: #fff;
+$opacity: 0.95;
+$animation-delay: 0.15s;
+$flag-size: 32px;
+
+// Blocks
+.modal {
+  background-color: $modal-backdrop;
+  color: $dark;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 5;
+  visibility: hidden;
+  will-change: visibility;
+}
+
+.active {
+  animation: slideInLeft $animation-delay ease-in forwards;
+}
+
+.closeButton {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  position: absolute;
+  right: $gutter;
+  top: $gutter;
+}
+
+.item {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: $gutter;
+  font-weight: bold;
+
+  &:not(:last-child) {
+    margin-bottom: $gutter;
+  }
+}
+
+.button {
+  border-radius: 50%;
+  cursor: pointer;
+  height: $flag-size;
+  object-fit: cover;
+  width: $flag-size;
+}

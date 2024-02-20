@@ -1,0 +1,21 @@
+// Pet Sorting Selector
+
+// Variables
+$dropdownMinWidth: 160px;
+$dropdownBorderRadius: 4px;
+
+// Blocks
+.dropdownWrapper {
+  align-items: center;
+  display: flex;
+  gap: $gutter;
+  margin-bottom: $gutter-xl;
+}
+
+.select {
+  background-color: $app-background;
+  border-radius: $dropdownBorderRadius;
+  color: $light;
+  min-width: $dropdownMinWidth;
+  padding: $gutter-s;
+}

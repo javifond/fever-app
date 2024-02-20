@@ -1,0 +1,27 @@
+// Defaulting styles for the APP
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background-color: $app_background;
+  font: normal normal $font-size $font-family;
+  color: $light;
+  text-size-adjust: none;
+  margin: $gutter $gutter-l;
+
+  @include tablet() {
+    margin: $gutter $gutter-xl;
+  }
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+a {
+  color: $light;
+  text-decoration: none;
+}

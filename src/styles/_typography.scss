@@ -1,0 +1,6 @@
+// Typography
+$_font-family: "proxima-nova", Helvetica, Arial, sans-serif;
+$_font-size: 16px;
+
+$font-family: var(--c-font-family, $_font-family);
+$font-size: var(--c-font-size, $_font-size);

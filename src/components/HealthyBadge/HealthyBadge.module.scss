@@ -1,0 +1,34 @@
+// Health Badge
+
+// Variables
+$badgeFontSize: 14px;
+$badgeBorderRadius: 4px;
+$badgeHeight: 32px;
+
+// Blocks
+.badge {
+  align-items: center;
+  background-color: transparent;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  display: flex;
+  font-size: $badgeFontSize;
+  font-weight: 900;
+  height: $badgeHeight;
+  padding: $gutter;
+}
+
+.veryHealthy {
+  background-color: $very-healthy-bg;
+  border-color: $very-healthy-border;
+}
+
+.healthy {
+  background-color: $healthy-bg;
+  border-color: $healthy-border;
+}
+
+.unhealthy {
+  background-color: $unhealthy-bg;
+  border-color: $unhealthy-border;
+}

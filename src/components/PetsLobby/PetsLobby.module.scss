@@ -1,0 +1,22 @@
+// Pets Lobby
+
+// Variables
+$petThumbnailMinWidth: 180px;
+
+// Blocks
+.lobby {
+  padding-bottom: $gutter-xl;
+}
+
+.title {
+  margin-bottom: $gutter-l;
+}
+
+.thumbnailContainer {
+  display: grid;
+  gap: $gutter;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(min(100%, $petThumbnailMinWidth), 1fr)
+  );
+}

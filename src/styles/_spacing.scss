@@ -1,0 +1,16 @@
+// Spacing
+$_gutter-xs: 4px;
+$_gutter-s: 8px;
+$_gutter: 16px;
+$_gutter-l: 24px;
+$_gutter-xl: 32px;
+$_gutter-xxl: 64px;
+
+// CSS Variables definition for spacing
+// c- stands for custom-
+$gutter-xs: var(--c-gutter-xs, $_gutter-xs);
+$gutter-s: var(--c-gutter-s, $_gutter-s);
+$gutter: var(--c-gutter, $_gutter);
+$gutter-l: var(--c-gutter-l, $_gutter-l);
+$gutter-xl: var(--c-gutter-xl, $_gutter-xl);
+$gutter-xxl: var(--c-gutter-xxl, $_gutter-xxl);

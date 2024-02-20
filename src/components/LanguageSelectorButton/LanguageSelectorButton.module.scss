@@ -1,0 +1,13 @@
+// Language Selector Button
+
+// Variables
+$flag-size: 32px;
+
+// Blocks
+.languageSelector {
+  border-radius: 50%;
+  cursor: pointer;
+  height: $flag-size;
+  object-fit: cover;
+  width: $flag-size;
+}

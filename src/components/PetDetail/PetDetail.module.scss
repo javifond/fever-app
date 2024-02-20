@@ -1,0 +1,52 @@
+// Pet Detail
+
+// Variables
+$imageHeight: 240px;
+$imageBorderRadius: 4px;
+
+// Blocks
+.header {
+  align-items: center;
+  display: flex;
+  gap: $gutter;
+  margin-bottom: $gutter;
+}
+
+.image {
+  background-color: $disabled;
+  border-radius: $imageBorderRadius;
+  height: $imageHeight;
+  margin-bottom: $gutter-s;
+  object-fit: cover;
+  width: 100%;
+}
+
+.brokenImage {
+  @extend .image;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: $gutter-xl;
+  margin-bottom: $gutter;
+
+  @include desktop() {
+    flex-direction: row;
+  }
+}
+
+.details {
+  flex-shrink: 0;
+  width: 100%;
+}
+
+.label {
+  color: $secondary;
+  font-weight: 700;
+  margin-right: $gutter-xs;
+}
+
+.description {
+  padding-bottom: $gutter;
+}

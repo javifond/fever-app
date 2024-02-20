@@ -1,0 +1,44 @@
+// Colors - Theme
+
+// Color Palette
+$_light: #fff;
+$_dark: #000;
+$_app-background: #201f1f;
+$_primary: #232f38;
+$_secondary: #459ca1;
+$_disabled: #e4e4e4;
+$_success: #22c993;
+$_error: #f03d3d;
+
+// Healthy States
+$_very-healthy-border: #3df052;
+$_very-healthy-bg: #3df05294;
+$_healthy-border: #22c993;
+$_healthy-bg: #22c99494;
+$_unhealthy-border: #f03d3d;
+$_unhealthy-bg: #f03d3d94;
+
+// Modal
+$_modal-backdrop: #ffffffe0;
+
+// CSS Variables definition for theming
+// c- stands for custom-
+$light: var(--c-light, $_light);
+$dark: var(--c-dark, $_dark);
+$app_background: var(--c-app_background, $_app_background);
+$primary: var(--c-primary, $_primary);
+$secondary: var(--c-secondary, $_secondary);
+$disabled: var(--c-disabled, $_disabled);
+$success: var(--c-success, $_success);
+$error: var(--c-error, $_error);
+
+// Healthy States
+$very-healthy-border: var(--c-very-healthy-border, $_very-healthy-border);
+$very-healthy-bg: var(--c-very-healthy-bg, $_very-healthy-bg);
+$healthy-border: var(--c-healthy-border, $_healthy-border);
+$healthy-bg: var(--c-healthy-bg, $_healthy-bg);
+$unhealthy-border: var(--c-unhealthy-border, $_unhealthy-border);
+$unhealthy-bg: var(--c-unhealthy-bg, $_unhealthy-bg);
+
+// Modal
+$modal-backdrop: var(--c-modal-backdrop, $_modal-backdrop);

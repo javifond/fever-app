@@ -1,0 +1,25 @@
+// Pet Of The Day
+
+// Variables
+$buttonMaxWidth: 320px;
+$buttonHeight: 42px;
+$buttonBorderRadius: 4px;
+
+// Blocks
+.container {
+  margin: $gutter-xl 0;
+}
+
+.title {
+  margin-bottom: $gutter-l;
+}
+
+.button {
+  border-radius: $buttonBorderRadius;
+  cursor: pointer;
+  font-weight: 900;
+  max-width: $buttonMaxWidth;
+  height: $buttonHeight;
+  text-transform: uppercase;
+  width: 100%;
+}

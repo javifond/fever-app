@@ -1,0 +1,48 @@
+// Pet Thumbnail
+
+// Variables
+$thumbnailBorderRadius: 8px;
+$imageHeight: 120px;
+$thumbnailFontSize: 12px;
+$animation-delay: 0.4s;
+$scale-amount: 1.05;
+
+// Blocks
+.thumbnail {
+  background-color: $primary;
+  border: 1px solid $light;
+  border-radius: $thumbnailBorderRadius;
+  overflow: hidden;
+  transition: transform $animation-delay;
+  will-change: transform;
+
+  &:hover {
+    cursor: pointer;
+    transform: scale($scale-amount);
+  }
+}
+
+.image {
+  background-color: $disabled;
+  height: $imageHeight;
+  margin-bottom: $gutter-s;
+  object-fit: cover;
+  width: 100%;
+}
+
+.brokenImage {
+  @extend .image;
+
+  object-fit: contain;
+}
+
+.infoContainer {
+  font-size: $thumbnailFontSize;
+  padding: $gutter-s;
+}
+
+.label {
+  color: $secondary;
+  font-weight: 700;
+  margin-right: $gutter-xs;
+}
